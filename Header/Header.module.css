@@ -1,0 +1,133 @@
+.header {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #ffffff;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.header h1 {
+    color: rgb(0, 31, 63, 1);
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    flex: 0 0 auto;
+}
+
+.header > div:first-of-type {
+    flex: 1;
+    max-width: 450px;
+}
+
+.imput {
+    padding: 0.7rem 1rem;
+    border-radius: 2rem;
+    border: 1px solid #e5e7eb;
+    font-size: 0.95rem;
+    width: 100%;
+    transition: border-color 0.3s;
+}
+
+.imput:focus {
+    outline: none;
+    border-color: rgb(0, 31, 63, 0.5);
+}
+
+.nav {
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 2;
+}
+
+.a {
+    color: rgb(0, 31, 63, 1);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: opacity 0.3s;
+    white-space: nowrap;
+}
+
+.a:hover {
+    opacity: 0.7;
+}
+
+.login {
+    color: white;
+    border-radius: 2rem;
+    background: rgb(0, 31, 63, 1);
+    border: none;
+    padding: 0.7rem 1.5rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.3s;
+}
+
+.login:hover {
+    background: rgb(0, 31, 63, 0.9);
+}
+
+
+@media (max-width: 1024px) {
+    .header {
+        padding: 1rem 1.5rem;
+    }
+
+    .nav {
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 1rem;
+    }
+
+    .header h1 {
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+
+    .header > div:first-of-type {
+        max-width: 100%;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .a {
+        font-size: 0.85rem;
+    }
+
+    .login {
+        padding: 0.6rem 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .a {
+        width: 100%;
+        text-align: center;
+        padding: 0.5rem 0;
+    }
+
+    .login {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+}
