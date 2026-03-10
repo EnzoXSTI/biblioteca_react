@@ -7,12 +7,13 @@
     gap: 1rem;
 }
 
-.header h1 {
+.home {
     color: rgb(0, 31, 63, 1);
     font-size: 1.5rem;
     font-weight: bold;
     margin: 0;
     flex: 0 0 auto;
+    text-decoration: none;
 }
 
 .header > div:first-of-type {
@@ -66,6 +67,7 @@
     cursor: pointer;
     white-space: nowrap;
     transition: background-color 0.3s;
+    text-decoration: none;
 }
 
 .login:hover {

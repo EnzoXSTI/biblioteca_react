@@ -1,0 +1,73 @@
+.loginPage{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(to top, rgb(100, 158, 219), rgb(37, 65, 94));
+}
+
+.card{
+    width:380px;
+    background:white;
+    padding:40px;
+    border-radius:16px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    text-align:center;
+}
+
+.logo{
+    font-size:28px;
+    margin-bottom:5px;
+}
+
+.subtitulo{
+    color:#777;
+    margin-bottom:30px;
+}
+
+.form{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.inputGroup{
+    display:flex;
+    flex-direction:column;
+    text-align:left;
+}
+
+.inputGroup label{
+    font-size:14px;
+    margin-bottom:5px;
+}
+
+.inputGroup input{
+    padding:12px;
+    border-radius:8px;
+    border:1px solid #ddd;
+    outline:none;
+    font-size:14px;
+}
+
+.inputGroup input:focus{
+    border:1px solid #000;
+}
+
+.botao{
+    margin-top:10px;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:black;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+    text-decoration: none;
+    text-align: center;
+}
+
+.botao:hover{
+    background:#333;
+}

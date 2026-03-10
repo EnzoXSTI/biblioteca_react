@@ -1,7 +1,8 @@
+
 import css from './Catalogo.module.css'
 import Livro from '../Livro/Livro.jsx'
 
-export default function Catalogo() {
+export default function Catalogo({ itens = 10 }) {
     return (
         <main className={css.catalogo}>
 
@@ -33,8 +34,12 @@ export default function Catalogo() {
                 <Livro />
                 <Livro />
                 <Livro />
-                <Livro />
-                <Livro />
+                {itens === 10 && (
+                    <>
+                        <Livro />
+                        <Livro />
+                    </>
+                )}
             </div>
 
             <div className={css.botao}>
